@@ -4,7 +4,7 @@
 // Automatically detect if running locally or on Render
 const API = window.location.hostname === 'localhost' 
   ? "http://localhost:5000/api"
-  : "https://examattendance.onrender.com/api";
+  : "https://ea-w4if.onrender.com/api";
 
 console.log("🌐 API Endpoint:", API);
 
@@ -581,4 +581,5 @@ document.getElementById("startVerify").addEventListener("click", async () => {
 ============================================ */
 document.getElementById("exportCSV").addEventListener("click", () => {
   window.open(`${API}/attendance/today?format=csv`, '_blank');
+
 });
