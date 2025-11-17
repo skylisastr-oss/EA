@@ -13,7 +13,7 @@ const corsOptions = {
   origin: [
     process.env.FRONTEND_URL || 'http://localhost:3000',
     'http://localhost:5000',
-    'https://examattendance.onrender.com'
+    'https://ea-w4if.onrender.com'
   ],
   credentials: true,
   optionsSuccessStatus: 200
@@ -97,3 +97,4 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`   💾 Database: ${MONGODB_URI.includes('localhost') ? 'Local MongoDB' : 'MongoDB Atlas'}`);
   console.log('   ========================================\n');
 });
+
